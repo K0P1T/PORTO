@@ -1,3 +1,5 @@
+import emailjs from 'emailjs-com';
+
 /* ==================== 
   toggle icon navbar 
 ====================== */
