@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -151,8 +152,10 @@
         <input type="submit" value="Send Message" class="btn" />
       </form>
     
-      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-      <script>
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
         (function () {
           emailjs.init('sTKauSe3TbTUy-qsQ'); // Replace with your EmailJS Public Key
         })();
@@ -174,8 +177,7 @@
             message,
           };
     
-          emailjs
-            .send('service_1i81dow', 'template_v4vjnrd', templateParams)
+          emailjs.send('service_1i81dow', 'template_v4vjnrd', templateParams)
             .then(
               (response) => {
                 alert('Message sent successfully!');
